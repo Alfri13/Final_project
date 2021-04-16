@@ -42,6 +42,30 @@ font-size: 15px;
 text-align: center;
 color: #AABAAA;}
 
+#settings-menu-btn { background-color:#7DD460;
+    border: none;
+
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #2196F3;
+    padding: 10px;
+margin-left: auto;
+margin-right: auto;}
+    
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
+
+
+button{ margin-left: auto;
+margin-right: auto;}
 
 footer {margin-top: 25% ;
 margin-left: auto;
@@ -52,10 +76,12 @@ margin-right: auto;}
 
 nav{
 
-    width: 100%;
+    width: 390px;
+    height: 500px;
+    border-radius: 30px 30px;
     position: fixed;
     bottom : -100%;
-    background-color: #141414;
+    background-color:#E2F7E4;
     padding: 5% 0%;
     transition: .6s;
 
@@ -63,8 +89,7 @@ nav{
 
 
 .navToggle{
-
-    bottom : 0;
+bottom : 0;
 
 }
 
@@ -81,7 +106,7 @@ nav{
 
 #menu li a{
 
-    color : whitesmoke;
+    color :black;
     font-size: 1.2em;
     text-decoration: none;
 
