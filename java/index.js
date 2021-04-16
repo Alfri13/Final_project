@@ -2,21 +2,13 @@ var helloWorld = "test";
 
 console.log(helloWorld);
 
-function openForm() {
-    document.getElementById("myForm").style.display = "block";
-  }
-  
-  function closeForm() {
-    document.getElementById("myForm").style.display = "none";
-  }
+$(document).ready(function(){
 
-  $('#date-picker').mobiscroll().datepicker({
-    controls: ['date'],
-    touchUi: true
+    $('#settings-menu-btn').on('click', function(){
+
+        $('nav').toggleClass('navToggle');
+
+    });
+
 });
 
-// time picker
-$('#time-picker').mobiscroll().datepicker({
-    controls: ['time'],
-    touchUi: true
-});
