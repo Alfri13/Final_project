@@ -1,8 +1,11 @@
+
+
 .phone {background: #F7FFF8;
     width: 390px;
     height: 844px;
 
 }
+
 img {display: block;
 margin-left: auto;
 margin-right: auto;
@@ -42,9 +45,153 @@ font-size: 15px;
 text-align: center;
 color: #AABAAA;}
 
+h6 {font-family:'Montserrat', sans-serif;
+    color: #038C3E;
+    font-weight: 500;
+font-size: 20px;
+margin-left: 15%;
+margin-top: 0;
+margin-bottom: 0;
+}
+
+#date {
+    display: flex;
+    align-items: center;
+
+
+  }
+#time {display: flex;
+    align-items: center;}
+
+    /* AM/PM lable */
+
+    label.ampm-switch {
+        z-index: 1;
+        position: relative;
+        box-sizing: border-box;
+        display: inline-block;
+        vertical-align: middle;
+        border-radius: 3px;
+        overflow: hidden;
+        width: 40px;
+        height: 40px;
+        margin: 0;
+        cursor: pointer;
+        background-color: #84C796;
+    }
+    label.ampm-switch:before,
+    label.ampm-switch:after {
+        box-sizing: border-box;
+        display: block;
+        width: 40px;
+        height: 20px;
+        font-size: 12px;
+        /* font-weight: bold; */
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+        line-height: 20px;
+        color: white;
+    }
+    label.ampm-switch:before {
+        content: "AM";
+    }
+    
+    label.ampm-switch:after {
+        content: "PM";
+    }
+    
+    label.ampm-switch input {
+        position: absolute;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        margin: 0;
+        padding: 0;
+        border: 0;
+        -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0.1);
+        filter: alpha(opacity=0.1);
+        opacity: .001;
+        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    }
+    
+    
+    label.ampm-switch .toggle-button {
+        z-index: 2;
+        display: inline-block;  
+        position: absolute;
+        top:0;
+        padding: 0;
+        margin: 0;
+        width: 40px;
+        height: 20px;
+        background: transparent;
+        box-sizing: border-box;
+        background-clip: padding-box;
+        white-space: nowrap;
+        border: 1px solid #dee1e8;
+        color: #454545;
+        background-color: #dee1e8;
+        -webkit-transition: top .05s ease-in-out;
+        -moz-transition: top .05s ease-in-out;
+        -o-transition: top .05s ease-in-out;
+        -ms-transition: top .05s ease-in-out;
+        transition: top .05s ease-in-out;
+        background: #fbfcfd
+    
+    }
+    
+    label.ampm-switch input:checked + .toggle-button {
+        top: 20px;
+    }
+    
+    label.ampm-switch .toggle-button:before {
+        box-sizing: border-box;
+        display: block;
+        width: 40px;
+        height: 20px;
+        font-size: 12px;
+        /* font-weight: bold; */
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+        line-height: 20px;
+        color: #ced1f5;
+    }
+    label.ampm-switch .toggle-button:before {
+        content: "AM";
+    }
+    
+    
+    label.ampm-switch input:checked + .toggle-button:before {
+        content: "PM";
+    }
+  
+.time { font-family: 'Montserrat', sans-serif;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 20px;
+    background-color: #C2E7CB;
+    padding: 10px;
+    border-radius: 5px;}
+
+    
+
+.date{ font-family: 'Montserrat', sans-serif;
+margin-left: 5%;
+font-size: 20px;
+background-color: #C2E7CB;
+padding: 10px;
+border-radius: 5px;}
+
+.day{ font-family: 'Montserrat', sans-serif;
+margin-left: 5%;
+margin-right: 5%;
+font-size: 20px;
+background-color: #C2E7CB;
+padding: 10px;
+border-radius: 5px;}
+
 #settings-menu-btn { background-color:#7DD460;
     border: none;
-    margin-top: 20%;
+    margin-top: 55%;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -55,19 +202,20 @@ color: #AABAAA;}
     font-family:'Montserrat', sans-serif;
     font-weight: 400;
     color: white;
+    box-shadow: gray 2px 2px 5px;
 
 }
 .grid-container {
     display: grid;
     grid-template-columns: auto auto auto;
-    padding: 10px;
+    padding: 5px;
 margin-left: auto;
 margin-right: auto;}
 
 .grid-item {
     font-family:'Montserrat', sans-serif;
     font-weight: 400;
-    padding: 10px;
+    padding: 5px;
     font-size: 18px;
     text-align: center;
     color: #5F5F5F;
@@ -78,7 +226,7 @@ margin-right: auto;}
 border: gray dotted;
 background-color: white; }
 
-footer {margin-top: 75% ;
+footer {margin-top: 34% ;
 margin-left: auto;
 margin-right: auto;}
 
@@ -110,12 +258,21 @@ input {
     font-family:'Montserrat', sans-serif;
     font-weight: 400; 
     font-size: 18px;
+    text-decoration: none;
 color: white;
 margin-top: 5%;
 width: 90px;
 border-radius: 5px;
 box-shadow: gray 2px 2px 5px;
 }
+a {text-decoration: none;
+color: white;}
+
+#back{ float: left;
+margin-top: 10%;
+margin-left: 5%}
+.confirmation
+{margin-top: 45%;}
 
 
 
@@ -141,6 +298,7 @@ bottom : 0;
 
 }
 
+
 h5 {
     font-family:'Montserrat', sans-serif;
     font-size: 16px;
@@ -148,6 +306,13 @@ h5 {
     color: #040B24;
     text-align:justify;
     margin-left: 50px;
+}
+b {font-family:'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #040B24;
+
+
 }
 #confirm-btn {
     background-color:#7DD460;
@@ -163,5 +328,6 @@ h5 {
     font-family:'Montserrat', sans-serif;
     font-weight: 400;
     color: white;
+    box-shadow: gray 2px 2px 5px;
 }
 
