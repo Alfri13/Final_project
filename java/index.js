@@ -18,6 +18,11 @@ $(document).ready(function(){
 
     });
 
-
+    $('.grid-item').on('click', function(){
+        $('.grid-item').removeClass('selected');
+        $(this).addClass('selected');
+        
+    });
+ 
 });
 

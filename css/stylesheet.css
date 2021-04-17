@@ -44,30 +44,41 @@ color: #AABAAA;}
 
 #settings-menu-btn { background-color:#7DD460;
     border: none;
+    margin-top: 20%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 290px;
+    height: 60px;
+    font-size: 24px;
+    border-radius: 15px;
+    font-family:'Montserrat', sans-serif;
+    font-weight: 400;
+    color: white;
 
 }
 .grid-container {
     display: grid;
     grid-template-columns: auto auto auto;
-    background-color: #2196F3;
     padding: 10px;
 margin-left: auto;
 margin-right: auto;}
-    
 
 .grid-item {
-    background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    padding: 20px;
-    font-size: 30px;
+    font-family:'Montserrat', sans-serif;
+    font-weight: 400;;
+    padding: 10px;
+    font-size: 18px;
     text-align: center;
+    color: #5F5F5F;
   }
+ 
 
+.selected {color: #000;
+border: gray dotted;
+background-color: white; }
 
-button{ margin-left: auto;
-margin-right: auto;}
-
-footer {margin-top: 25% ;
+footer {margin-top: 75% ;
 margin-left: auto;
 margin-right: auto;}
 
@@ -94,27 +105,4 @@ bottom : 0;
 }
 
 
-#menu{
 
-    width : 100%;
-    display: flex;
-    justify-content: space-around;
-    list-style-type: none;
-
-}
-
-
-#menu li a{
-
-    color :black;
-    font-size: 1.2em;
-    text-decoration: none;
-
-}
-
-
-#settings-menu-btn{
-
-    margin-top: 20%;
-
-}
