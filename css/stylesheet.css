@@ -66,7 +66,7 @@ margin-right: auto;}
 
 .grid-item {
     font-family:'Montserrat', sans-serif;
-    font-weight: 400;;
+    font-weight: 400;
     padding: 10px;
     font-size: 18px;
     text-align: center;
@@ -82,6 +82,41 @@ footer {margin-top: 75% ;
 margin-left: auto;
 margin-right: auto;}
 
+#x {float: right;
+border: none;
+background-color:#E2F7E4;
+margin-top: -10%;
+margin-right: 5%}
+
+input {
+    border-radius: 14px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 270px;
+    height: 75px;
+    border: none;
+    font-family:'Montserrat', sans-serif;
+    font-weight: 400; 
+
+
+}
+#next{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    background-color: #7DD460;
+    font-family:'Montserrat', sans-serif;
+    font-weight: 400; 
+    font-size: 18px;
+color: white;
+margin-top: 5%;
+width: 90px;
+border-radius: 5px;
+box-shadow: gray 2px 2px 5px;
+}
+
 
 
 
@@ -89,13 +124,14 @@ margin-right: auto;}
 nav{
 
     width: 390px;
-    height: 500px;
+    height: 600px;
     border-radius: 30px 30px;
     position: fixed;
     bottom : -100%;
     background-color:#E2F7E4;
     padding: 5% 0%;
     transition: .6s;
+    box-shadow:  -3px 0px 5px gray;
 
 }
 
